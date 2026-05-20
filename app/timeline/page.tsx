@@ -34,12 +34,12 @@ export default function TimelinePage() {
         </div>
 
         <aside className="grid gap-6">
-          <section className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-[0_18px_70px_rgba(15,23,42,0.08)]">
+          <section className="rounded-4xl border border-slate-200 bg-white p-8 shadow-[0_18px_70px_rgba(15,23,42,0.08)]">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Meta</p>
             <p className="mt-4 text-2xl font-semibold tracking-tight text-slate-950">Validar que o fluxo suporta navegação extensa e leitura de etapas.</p>
           </section>
 
-          <section className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-[0_18px_70px_rgba(15,23,42,0.08)]">
+          <section className="rounded-4xl border border-slate-200 bg-white p-8 shadow-[0_18px_70px_rgba(15,23,42,0.08)]">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Sinais</p>
             <ul className="mt-5 space-y-3 text-sm leading-7 text-slate-700">
               <li className="rounded-2xl bg-slate-50 px-4 py-3">Marcos visíveis por ordem.</li>

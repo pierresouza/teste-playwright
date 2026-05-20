@@ -35,16 +35,17 @@ export default function CatalogoPage() {
 
         <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {products.map((product, index) => (
-            <article key={product.name} className={`rounded-[32px] border p-6 shadow-[0_18px_70px_rgba(15,23,42,0.06)] ${index === 1 ? "border-slate-950 bg-slate-950 text-white" : "border-slate-200 bg-white"}`}>
+            <article
+              key={product.name}
+              className={`rounded-4xl  border p-6 shadow-[0_18px_70px_rgba(15,23,42,0.06)] ${index === 1 ? "border-slate-950 bg-slate-950 text-white" : "border-slate-200 bg-white"}`}
+            >
               <span className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] ${index === 1 ? "bg-white/10 text-slate-200" : "bg-slate-100 text-slate-500"}`}>
                 {product.tag}
               </span>
               <div className="mt-16 flex items-end justify-between gap-4">
                 <div>
                   <h2 className="text-2xl font-semibold tracking-tight">{product.name}</h2>
-                  <p className={`mt-2 text-sm ${index === 1 ? "text-slate-200" : "text-slate-600"}`}>
-                    Descrição curta para testes de leitura e comparação entre cards.
-                  </p>
+                  <p className={`mt-2 text-sm ${index === 1 ? "text-slate-200" : "text-slate-600"}`}>Descrição curta para testes de leitura e comparação entre cards.</p>
                 </div>
                 <strong className="text-xl font-semibold tracking-tight">{product.price}</strong>
               </div>

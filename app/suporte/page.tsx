@@ -30,7 +30,7 @@ export default function SuportePage() {
         </article>
 
         <aside className="grid gap-6">
-          <section className="rounded-[32px] border border-slate-200 bg-slate-950 p-8 text-white shadow-[0_18px_70px_rgba(15,23,42,0.18)]">
+          <section className="rounded-4xl border border-slate-200 bg-slate-950 p-8 text-white shadow-[0_18px_70px_rgba(15,23,42,0.18)]">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-300">Status</p>
             <div className="mt-6 space-y-4">
               {[
@@ -46,7 +46,7 @@ export default function SuportePage() {
             </div>
           </section>
 
-          <section className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-[0_18px_70px_rgba(15,23,42,0.08)]">
+          <section className="rounded-4xl border border-slate-200 bg-white p-8 shadow-[0_18px_70px_rgba(15,23,42,0.08)]">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Contato</p>
             <div className="mt-5 space-y-3">
               {faqs.map(([question, answer]) => (

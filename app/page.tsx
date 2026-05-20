@@ -49,7 +49,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid gap-3 sm:grid-cols-3 lg:min-w-[340px] lg:grid-cols-1">
+            <div className="grid gap-3 sm:grid-cols-3 lg:min-w-85 lg:grid-cols-1">
               {[
                 ["Rotas prontas", "6"],
                 ["Layouts distintos", "5+"],
@@ -66,7 +66,7 @@ export default function Home() {
 
         <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {routeCards.map((card) => (
-            <article key={card.title} className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_18px_70px_rgba(15,23,42,0.06)]">
+            <article key={card.title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_18px_70px_rgba(15,23,42,0.06)]">
               <h2 className="text-xl font-semibold">{card.title}</h2>
               <p className="mt-3 text-sm leading-7 text-slate-600">{card.description}</p>
               <a className="mt-5 inline-flex rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800" href={card.href}>
