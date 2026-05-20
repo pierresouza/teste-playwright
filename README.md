@@ -1,8 +1,8 @@
 # Projeto de POC para Playwright
 
-Este repositório serve como base genérica para avaliar, na prática, se o Playwright faz sentido para testes no projeto principal.
+Este repositório é uma base genérica para avaliar, na prática, se o Playwright faz sentido no projeto principal.
 
-A ideia aqui não é entregar uma aplicação de negócio, e sim uma coleção de telas com layouts diferentes, conteúdo suficiente e navegação fixa no topo para simular fluxos reais de uso.
+A proposta não é simular um produto final, e sim oferecer várias telas com layouts diferentes, conteúdo suficiente e navegação fixa no topo para que os testes tenham superfícies reais de interação.
 
 ## Objetivo
 
@@ -25,8 +25,24 @@ A ideia aqui não é entregar uma aplicação de negócio, e sim uma coleção d
 npm run dev
 ```
 
-Abra [http://localhost:3000](http://localhost:3000) para navegar pelas páginas.
+Abra http://localhost:3000 para navegar pelas páginas.
+
+## Testes E2E com Playwright
+
+Os comandos abaixo ajudam a executar os testes do projeto:
+
+- `npm run test:e2e`  
+  Executa todos os testes em modo headless, que é o modo padrão para validação automatizada.
+
+- `npm run test:e2e:headed`  
+  Executa os testes com o navegador visível, útil para depurar cliques, navegação e seletores.
+
+- `npm run test:e2e:ui`  
+  Abre a interface interativa do Playwright para explorar os testes manualmente.
+
+- `npm run test:e2e:report`  
+  Abre o relatório HTML gerado pelos testes anteriores.
 
 ## Observação
 
-O Playwright ainda não foi instalado neste projeto. A estrutura foi preparada apenas para a POC e para ajudar na decisão futura sobre adoção no sistema principal.
+O Playwright já está adicionado como dependência de desenvolvimento, e a base da POC continua focada em validação manual e futura automação.
