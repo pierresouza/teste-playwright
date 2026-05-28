@@ -16,6 +16,21 @@ export default function Home() {
       href: "/formularios",
     },
     {
+      title: "Relatórios",
+      description: "Cards, tabela e filtros de período.",
+      href: "/relatorios",
+    },
+    {
+      title: "Perfil",
+      description: "Dados de conta e preferências editáveis.",
+      href: "/perfil",
+    },
+    {
+      title: "Notificações",
+      description: "Lista de alertas com ações em massa e itens individuais.",
+      href: "/notificacoes",
+    },
+    {
       title: "Timeline",
       description: "Linha do tempo com marcos e destaques.",
       href: "/timeline",
@@ -38,12 +53,8 @@ export default function Home() {
         <section className="rounded-[36px] border border-slate-200 bg-white/85 p-8 shadow-[0_18px_70px_rgba(15,23,42,0.08)] backdrop-blur sm:p-10">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <span className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
-                Hub de navegação
-              </span>
-              <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
-                Base genérica com várias rotas para testar Playwright sem depender do projeto principal.
-              </h1>
+              <span className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Hub de navegação</span>
+              <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">Base genérica com várias rotas para testar Playwright sem depender do projeto principal.</h1>
               <p className="mt-5 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
                 Use o menu fixo no topo para alternar entre páginas com estruturas diferentes, validar cliques, rolagem, seletores e estados visuais variados.
               </p>
@@ -51,8 +62,8 @@ export default function Home() {
 
             <div className="grid gap-3 sm:grid-cols-3 lg:min-w-85 lg:grid-cols-1">
               {[
-                ["Rotas prontas", "6"],
-                ["Layouts distintos", "5+"],
+                ["Rotas prontas", "9"],
+                ["Layouts distintos", "8+"],
                 ["Objetivo", "POC"],
               ].map(([label, value]) => (
                 <div key={label} className="rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3">
